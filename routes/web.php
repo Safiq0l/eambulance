@@ -33,6 +33,9 @@ Route::get('/login',[LoginController::class,'login'])->name('form');
 
 Route::get('login/loginform',[LoginController::class,'loginform']);
 
+Route::post('login/loginform/store',[LoginController::class,'store'])->name('login.loginform.store');
+
+
 Route::get('/ambulances',[AmbulanceController::class,'ambulances']);
 
 Route::get('ambulances/ambulanceform',[AmbulanceController::class,'ambulanceform']);

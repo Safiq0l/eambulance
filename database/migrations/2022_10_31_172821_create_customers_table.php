@@ -16,9 +16,11 @@ return new class extends Migration
         Schema::create('customers', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('phone');
-            $table->string('gender');
-            $table->string('age');
+            $table->string('phone_number');
+            $table->string('Email_address');
+            $table->string('status')->default('active');
+            $table->string('image')->nullable();
+            $table->string('password');
             $table->timestamps();
         });
     }
