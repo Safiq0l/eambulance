@@ -12,9 +12,10 @@
     <input type="text" class="form-control" id="name" name="name" placeholder="Name">
 </div>
 
-<div class="form-outline">
+<div class="form-group">
+     <label class="form-label" for="typePhone">Phone number</label>
   <input type="tel" id="typePhone" class="form-control" name="number" placeholder="number"/>
-  <label class="form-label" for="typePhone">Phone number</label>
+  
 </div>
 
 <div class="form-group">

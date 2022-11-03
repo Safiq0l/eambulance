@@ -9,7 +9,14 @@ use App\Models\customer;
 class LoginController extends Controller
 {
     public function login(){
-     return view("backend.pages.login.login");
+
+          
+        $login_list=customer::all();
+
+       // dd($login_list);
+        return view('backend.pages.login.login',compact('login_list'));
+
+
     }
 
 
