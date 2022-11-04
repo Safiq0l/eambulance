@@ -19,7 +19,7 @@
                             <div class="sb-sidenav-menu-heading">Interface</div>
                             <a class="nav-link collapsed" href="{{url('/ambulances')}}" >
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                types of ambulance
+                                 Ambulance
                                 
                             </a>
                             

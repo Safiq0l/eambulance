@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('ambulances', function (Blueprint $table) {
             $table->id();
+            $table->string('Registration_number');
+            $table->string('Ambulance_type');
             $table->timestamps();
         });
     }

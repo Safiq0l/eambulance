@@ -39,4 +39,4 @@ Route::post('login/loginform/store',[LoginController::class,'store'])->name('log
 Route::get('/ambulances',[AmbulanceController::class,'ambulances']);
 
 Route::get('ambulances/ambulanceform',[AmbulanceController::class,'ambulanceform']);
-
+Route::post('ambulances/ambulanceform/store',[AmbulanceController::class,'store'])->name('ambulances.ambulanceform.store');
