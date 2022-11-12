@@ -5,6 +5,8 @@ use App\Http\Controllers\backend\AdminController;
 use App\Http\Controllers\backend\LoginController;
 use App\Http\Controllers\backend\DashboardController;
 use App\Http\Controllers\backend\AmbulanceController;
+use App\Http\Controllers\backend\DriverController;
+
 
 
 
@@ -40,3 +42,6 @@ Route::get('/ambulances',[AmbulanceController::class,'ambulances']);
 
 Route::get('ambulances/ambulanceform',[AmbulanceController::class,'ambulanceform']);
 Route::post('ambulances/ambulanceform/store',[AmbulanceController::class,'store'])->name('ambulances.ambulanceform.store');
+
+Route::get('/drivers',[DriverController::class,'drivers']);
+Route::get('drivers/driverform',[DriverController::class,'driverform']);

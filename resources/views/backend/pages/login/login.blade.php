@@ -30,7 +30,7 @@
             <td>{{$data->Email_address}}</td>
             <td>{{$data->status}}</td>
             <td>
-                <img src="{{$data->image}}" alt="Image">
+                <img width="50px" style="border-radius: 15px" src="{{url('/uploads/'.$data->image)}}" alt="Image">
             </td>
             <td>{{$data->password}}</td>
 
@@ -57,6 +57,6 @@
 
         </tbody>
     </table>
-
+    {{$login_list->links()}}
 
 @endsection()
