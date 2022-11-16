@@ -2,9 +2,7 @@
 
 @section('contents')
 
-
-<h1>this is a driver</h1>
-
+<h1>hh</h1>
 
 
 @endsection()

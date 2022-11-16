@@ -5,7 +5,7 @@
 
 
 
-<form action="{{route('drivers.driverform')}}" >
+<form action="{{route('driverform')}}" >
   
 <div class="form-group">
     <label for="name">Enter your Name</label>
@@ -17,6 +17,13 @@
   <input  required type="tel" id="typePhone" class="form-control" name="number" placeholder="number"/>
   
 </div>
+<div class="form-group">
+     <label class="form-label" for="typePhone">NID</label>
+  <input  required type="tel" id="typePhone" class="form-control" name="nid" placeholder="number"/>
+  
+</div>
+
+
 
 <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>

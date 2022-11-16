@@ -5,7 +5,7 @@
 
 <h1>user List</h1>
 
-        <a href="{{url('/login/loginform')}}" class="btn btn-primary">
+        <a href="{{route('loginform')}}" class="btn btn-primary">
         Create New User
     </a>
     <table class="table table-striped">

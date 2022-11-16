@@ -5,7 +5,7 @@
 
 <h1>user List</h1>
 
-        <a href="{{url('/ambulances/ambulanceform')}}" class="btn btn-success">
+        <a href="{{route('ambulanceform')}}" class="btn btn-success">
         Create New User
     </a>
     <table class="table table-striped">

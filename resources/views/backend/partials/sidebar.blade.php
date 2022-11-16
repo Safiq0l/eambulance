@@ -1,3 +1,5 @@
+
+
 <div id="layoutSidenav">
             <div id="layoutSidenav_nav">
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
@@ -9,7 +11,7 @@
                                 Dashboard
                             </a>
                             <div class="sb-sidenav-menu-heading">Interface</div>
-                            <a class="nav-link collapsed" href="{{url('/login')}}" >
+                            <a class="nav-link collapsed" href="{{route('form')}}" >
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Login System
                                 
@@ -17,7 +19,7 @@
                            
                             </a>
                             <div class="sb-sidenav-menu-heading">Interface</div>
-                            <a class="nav-link collapsed" href="{{url('/ambulances')}}" >
+                            <a class="nav-link collapsed" href="{{route('ambulances')}}" >
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                  Ambulance
                                 
@@ -28,7 +30,7 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 Manage Booking Details
                             </a>
-                            <a class="nav-link" href="{{url('/drivers')}}">
+                            <a class="nav-link" href="{{route('drivers')}}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Driver Information
                             </a>
