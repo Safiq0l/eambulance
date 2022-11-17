@@ -58,8 +58,30 @@ class LoginController extends Controller
 
     return redirect()->back();
 
+    }
+
+    public function deleteuser($login_id){
+        
+      $test=customer::find($login_id);
+
+      if($test)
+      {
 
 
+        $test->delete();
+        return redirect()->back()->with('message','User deleted successfully');
+      } else{
+        return redirect()->back()->with('message','user not found');
+      }
+
+
+    }
+
+
+    public function viewuser($view_id)
+    {
+      $test=customer::find($view_id);
+      return view('backend.pages.login.view',compact('test'));
     }
 
 

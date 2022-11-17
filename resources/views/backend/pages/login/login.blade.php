@@ -5,6 +5,16 @@
 
 <h1>user List</h1>
 
+
+@if(session()->has('message'))
+        <p class="alert alert-success">{{session()->get('message')}}</p>
+      @endif
+
+    @if(session()->has('error'))
+        <p class="alert alert-danger">{{session()->get('error')}}</p>
+    @endif
+
+
         <a href="{{route('loginform')}}" class="btn btn-primary">
         Create New User
     </a>
@@ -36,8 +46,8 @@
 
             <td>
                 <a href="" class="btn btn-outline-primary">Update</a>
-                <a href="" class="btn btn-outline-danger">Delete</a>
-                <a href="" class="btn btn-outline-success">View</a>
+                <a href="{{route('admin.user.delete',$data->id)}}" class="btn btn-outline-danger">Delete</a>
+                <a href="{{route('admin.user.view',$data->id)}}" class="btn btn-outline-success">View</a>
             </td>
 
 

@@ -40,7 +40,8 @@ class AmbulanceController extends Controller
  
      }
 
-
+       
+     
 
 
 
